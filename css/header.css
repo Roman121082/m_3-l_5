@@ -1,0 +1,45 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 15px 0;
+  min-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.phone {
+  text-align: center;
+}
+
+.phone__link {
+  display: block;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+
+.phone__button {
+  position: relative;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.phone__button:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 23px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}

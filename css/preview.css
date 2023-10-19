@@ -1,0 +1,47 @@
+.preview {
+  background-blend-mode: multiply;
+  position: relative;
+  background-image: url('../images/preview-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(47, 50, 75, 0.85);
+}
+
+.preview__title {
+  padding-top: 173px;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  font-family: Roboto;
+  white-space: pre-line;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 61px;
+  margin-bottom: 35px;
+}
+
+.preview__subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 141%;
+  white-space: pre-line;
+  margin-bottom: 90px;
+}
+
+.preview__link {
+  padding: 12px 48px;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #15A9CB;
+  box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
+  display: inline-block;
+  margin-bottom: 85px;
+}
