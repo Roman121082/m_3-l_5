@@ -1,0 +1,102 @@
+.contact-form {
+  background-blend-mode: multiply;
+  position: relative;
+  background-image: url('../images/contact-form-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(47, 50, 75, 0.85);
+}
+
+.contact-form__title {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  margin-bottom: 17px;
+}
+
+.contact-form__subtitle {
+  color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 35px;
+}
+
+.contact-form__list {
+  margin-bottom: 50px;
+}
+
+.contact-form__item {
+  margin-bottom: 21px;
+}
+
+.contact-form__item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form__input {
+  background-color: transparent;
+  border-radius: 50px;
+  max-width: 423px;
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 9px 25px;
+  border: 1px solid #fff;
+}
+
+.contact-form__button {
+  display: inline-block;
+  margin: 0 auto;
+  color: #FFF;
+  padding: 11px 38px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  border-radius: 50px;
+  background: #15A9CB;
+  box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.30);
+}
+
+.contact-form__text {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 35px 0;
+  white-space: normal;
+}
+
+.contact-form__link {
+  position: relative;
+  color: #4A76A8;
+}
+
+.contact-form__link::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 21px;
+  left: 0;
+  color: #4A76A8;
+  z-index: 10;
+}

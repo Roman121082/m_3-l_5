@@ -1,88 +1,68 @@
 .footer {
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background-color: #2F324B;
 }
 
-.contacts {
+.footer__box {
   display: flex;
-  margin-bottom: 156px;
   justify-content: space-between;
+  padding: 40px 0;
+  gap: 70px;
+  align-items: center;
 }
 
-.contacts__box {
+.footer__logo-box {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-.address {
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  background-size: 680px 274px;
-  background-position: right;
-  background-repeat: no-repeat;
-  margin-bottom: 35px;
-}
-
-.address__text {
-  padding-left: 62px;
-  background-position: center left;
-  background-repeat: no-repeat;
-}
-
-.address__text_location {
-  margin: 0 0 38px;
-  line-height: 28px;
-  white-space: pre-line;
-  background-image: url('../images/icon/location.svg');
-}
-
-.address__text_phone {
-  margin: 0 0 11px;
-  background-image: url('../images/icon/phone.svg');
-
-}
-
-.address__text_mail {
-  margin-bottom: 0;
-  background-image: url('../images/icon/mail.svg');
-}
-
-.link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.link:hover {
-  color: var(--hover-color);
-  transition: color 0.3s ease-in;
-}
-
-.footer__social-list {
-  height: 50px;
-}
-
-.footer__social-item {
-  margin-right: 26px;
+.footer__logo {
+  position: relative;
+  margin-right: 20px;
+  height: 68px;
   display: inline-block;
+}
+
+.footer__text-box {
+  display: flex;
   text-align: center;
 }
 
-.footer__social-item:last-child {
-  margin: 0;
+.footer__text {
+  display: flex;
+  justify-content: start;
+  color: #fff;
+  white-space: pre-line;
+  font-family: Roboto;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140.625%;
 }
 
-.footer__social-link {
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-  width: 50px;
-  height: 50px;
+
+@media (max-width: 750px) {
+  .footer__box {
+    row-gap: 0;
+  }
+
+  .footer__text-box {
+    order: 1;
+    justify-content: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.625%;
+    background-color: #2A2C3F;
+    padding: 15 auto;
+    text-align: center;
+  }
 }
 
-.footer__social-link:hover {
-  color: var(--main-color);
-  transition: color 0.3s ease-in;
+@media (max-width: 650px) {
+  .footer__box {
+    flex-wrap: wrap;
+
+  }
 }

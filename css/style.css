@@ -1,16 +1,11 @@
-@import "var.css";
+/* @import "var.css"; */
 @import "global.css";
 @import "normalize.css";
 @import "header.css";
 @import "preview.css";
-@import "price.css";
-@import "hall.css";
-@import "booking.css";
 @import "about.css";
-@import "comments.css";
-@import "faq.css";
+@import "contact-form.css";
 @import "footer.css";
-@import "copyright.css";
 
 * {
   box-sizing: border-box;
@@ -94,7 +89,7 @@ iframe {
 
 .container {
   position: relative;
-  max-width: 1100px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -120,7 +115,3 @@ input {
 в итоге 1240px
 Чтобы контент не прижимался к краям экрана
 */
-
-.footer {
-  padding-bottom: 10px;
-}

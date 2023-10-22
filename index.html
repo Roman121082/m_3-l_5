@@ -13,42 +13,120 @@
 
   <div class="container">
     <header class="header">
-      <a class="header__logo" href="!#">
-        <img class="header__img" src="../images/logo.svg" alt="">
+      <a class="header__logo" href="">
+        <img class="header__img" src="images/logo.svg" alt="">
       </a>
       <div class="phone">
         <a class="phone__link" href="tel:89625561234">+7 (962) 556 - 1234</a>
         <button type="button" class="phone__button">Перезвоните мне</button>
       </div>
+    </header>
   </div>
-  </header>
+
 
 
   <main>
     <section class="section preview">
-      <h1 class="preview__title">Заголовок c уникальным торговым
-        предложением по системе 4U</h1>
-      <p class="preview__subtitle">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику,
-        вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы
-        на русском языке, а начинающему.
-      </p>
-      <a class="preview__link" href="">Подробнее</a>
+      <div class="container">
+        <h1 class="preview__title">Заголовок c уникальным торговым
+          предложением по системе 4U</h1>
+        <p class="preview__subtitle">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику,
+          вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы
+          на русском языке, а начинающему.
+        </p>
+        <div class="preview__link-box">
+          <a class="preview__link" href="">Подробнее</a>
+        </div>
+      </div>
     </section>
 
     <section class="section about">
-      <h2 class="section__title">Уникальный заголовок для преимущества компании
-      </h2>
-      <p class="section__subtitle">О нас
-      </p>
-      <p class="about__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
-        несколько абзацев более менее осмысленного текста рыбы на русском языке,
-        а начинающему оратору отточить.</p>
+      <div class="container">
+        <h2 class="about__title">Уникальный заголовок для преимущества компании
+        </h2>
+        <p class="about__subtitle">О нас
+        </p>
+        <p class="about__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+          несколько абзацев более менее осмысленного текста рыбы на русском языке,
+          а начинающему оратору отточить.</p>
+        <ul class="advantage-list">
+          <li class="advantage-list__item">
+            <div class="advantage-list__number"></div>
+            <p class="advantage-list__text">Первое целевое преимущество
+            </p>
+          </li>
+          <li class="advantage-list__item">
+            <div class="advantage-list__number"></div>
+            <p class="advantage-list__text">Второе целевое преимущество
+            </p>
+          </li>
+          <li class="advantage-list__item">
+            <div class="advantage-list__number"></div>
+            <p class="advantage-list__text">Третье целевое преимущество
+            </p>
+          </li>
+          <li class="advantage-list__item">
+            <div class="advantage-list__number"></div>
+            <p class="advantage-list__text">Четвертое целевое преимущество
+            </p>
+          </li>
+        </ul>
+        </div">
+    </section>
+
+    <section class="section contact-form">
+      <div class="container">
+        <h2 class="contact-form__title">Остались вопросы?</h2>
+        <p class="contact-form__subtitle">Оставьте номер телефона, и мы перезвоним вам
+        </p>
+        <form class="contact-form__form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+          name="booking">
+          <ul class="contact-form__list">
+            <li class="contact-form__item">
+              <label class="contact-form__label" for="name"></label>
+              <input class="contact-form__input" type="text" name="name" id="name" placeholder="Ваше имя" required="">
+            </li>
+            <li class="contact-form__item">
+              <label class="contact-form__label" for="phone"></label>
+              <input class="contact-form__input" type="text" name="phone" id="phone" placeholder="Телефон" required="">
+            </li>
+            <li class="contact-form__item">
+              <label class="contact-form__label" for="mail"></label>
+              <input class="contact-form__input" type="text" name="mail" id="mail" placeholder="E-mail" required="">
+            </li>
+          </ul>
+          <button class="contact-form__button" type="submit">позвоните мне</button>
+        </form>
+        <p class="contact-form__text">Я даю своё <a class="contact-form__link" href="">согласие</a> на обработку моих
+          персональных данных.
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer class="section footer">
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__box">
+        <div class="footer__logo-box">
+          <a class="footer__logo" href="">
+            <img class="footer__img" src="images/logo.svg" alt="">
+          </a>
+          <p class="footer__text">© 2022 XXXcompany.
+            Все права защищены.
+          </p>
+        </div>
+        <div class="footer__text-box">
+          <p class="footer__text footer__text-author">Сделано Ивановым Иваном
+          </p>
+        </div>
+        <div class="phone">
+          <a class="phone__link" href="tel:89625561234">+7 (962) 556 - 1234</a>
+          <button type="button" class="phone__button">Перезвоните мне</button>
+        </div>
+      </div>
+    </div>
   </footer>
+
   <script>
     document.addEventListener('click', event => { if (event.target.matches('button')) { event.target.focus() } })
   </script>
