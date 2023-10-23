@@ -1,12 +1,13 @@
 .footer {
+  position: relative;
   background-color: #2F324B;
+  padding: 0;
 }
 
 .footer__box {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
-  gap: 70px;
+  padding: 45px 0;
   align-items: center;
 }
 
@@ -34,35 +35,58 @@
   white-space: pre-line;
   font-family: Roboto;
   font-size: 8px;
-  font-style: normal;
   font-weight: 500;
   line-height: 140.625%;
 }
 
+.footer__text-author {
+  display: flex;
+  justify-content: start;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140.625%;
+}
 
-@media (max-width: 750px) {
-  .footer__box {
-    row-gap: 0;
+@media (max-width: 1050px) {
+  .phone__link {
+    font-size: 21px;
+    line-height: 25px;
   }
 
-  .footer__text-box {
-    order: 1;
-    justify-content: center;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140.625%;
-    background-color: #2A2C3F;
-    padding: 15 auto;
-    text-align: center;
+  .phone__button {
+    font-size: 13px;
+    line-height: 15px;
   }
 }
 
 @media (max-width: 650px) {
+
+  .footer__logo-box {
+    min-height: 25px;
+  }
+
   .footer__box {
-    flex-wrap: wrap;
+    max-height: 30px;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+
+  .footer__text-author {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+    background-color: #2A2C3F;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
 
   }
 }

@@ -11,10 +11,6 @@
   z-index: 5;
 }
 
-.header__logo {
-  max-height: 68px
-}
-
 .phone {
   text-align: center;
   display: inline-block;
@@ -46,4 +42,36 @@
   top: 23px;
   left: 0;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1050px) {
+  .header {
+    padding-top: 15px;
+  }
+
+  svg {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .phone__link {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .phone__button {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .phone {
+    display: none;
+  }
+
+  svg {
+    max-width: 30px;
+    max-height: 30px;
+  }
 }
