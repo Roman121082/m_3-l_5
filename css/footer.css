@@ -64,7 +64,11 @@
 @media (max-width: 650px) {
 
   .footer__logo-box {
-    min-height: 25px;
+    max-height: 30px;
+  }
+
+  .footer__logo {
+    max-height: 30px;
   }
 
   .footer__box {

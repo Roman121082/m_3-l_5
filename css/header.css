@@ -34,6 +34,10 @@
   line-height: 19px;
 }
 
+.phohe-link {
+  display: none;
+}
+
 .phone__button:before {
   position: absolute;
   content: "";
@@ -66,8 +70,8 @@
 }
 
 @media (max-width: 560px) {
-  .phone {
-    display: none;
+  .phohe-link {
+    display: block;
   }
 
   svg {
